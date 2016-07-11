@@ -57,4 +57,5 @@ Store methods
  //store from scratch
  https://egghead.io/lessons/javascript-redux-implementing-store-from-scratch
 
-Experiment 1: /**** Counter - simple - just one html index and one js file
+ Experiment 1: /**** Counter - simple - just one html index and one js file
+ Experiment 2: /**** Counter - Improved - proper reducer and action files + imports
