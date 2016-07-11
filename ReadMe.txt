@@ -24,3 +24,9 @@ git remote add origin https://github.com/bhalla-shiraz/ReduxExperiments.git
 git push -u origin master
 
 //now when I create some files and I need to add and commit it
+git status
+git add ReadMe.txt
+git status
+git commit -m "readmeAdded"
+git branch
+git push origin master

@@ -1,0 +1,60 @@
+In redux we represent all the javascript code as a single object.
+
+Principle 1: State==>
+-----------------
+Everything that changes in the app - data and UI state - is contained in single object
+called the state and state tree.
+
+Principle 2: State Tree is Redundant ==>
+-----------------
+The time we want to change the state - we dispatch an action.
+(whenever something is done on View - UI it triggers or dispatches an action)
+
+Also
+Pure vs Impure functions
+Pure -
+1. Return value only depends on the input parameter/ args
+2. Don't have any observable side effects - such as network or database calls
+3. Don't modify the items passed to it - creates new item.
+
+Principle 3: Reducer function
+----------------
+(UI / view layer is most predictable when its described as pure function of application state)
+(redux complements this by creating a function that takes current state and action being dispatched and returns next state).
+
+Reduction
+---------
+Michael Jackson's expect library - checks if the reducer works properly
+reducer - takes in state and action - action has type in it on basis of which reduction is done.
+ES6 function declaration ---> const func = ( state = 0, action) => {}
+
+The Store
+---------
+method 1: redux as script but better way is npm in real application.
+
+createStore function -->
+const { createStore } = Redux;
+//equivalent to
+//createStore = Redux.createStore;
+//or
+//import { createStore } from 'Redux'
+
+const store = createStore(reduxer function)
+Store methods
+1. getState
+2. dispatch
+3. subscribe - callback to redux store
+   const render = () => {
+     document.body.innerText = store.getState();
+   };
+   store.subscribe(render);
+
+   document.addEventListener('click', () =>{
+      store.dispatch({ type: 'INCREMENT'});
+   });
+
+
+ //store from scratch
+ https://egghead.io/lessons/javascript-redux-implementing-store-from-scratch
+
+Experiment 1: /**** Counter - simple - just one html index and one js file
