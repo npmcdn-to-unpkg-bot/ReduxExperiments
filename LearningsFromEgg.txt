@@ -59,3 +59,5 @@ Store methods
 
  Experiment 1: /**** Counter - simple - just one html index and one js file
  Experiment 2: /**** Counter - Improved - proper reducer and action files + imports
+ Experiment 3: /**** Todo example uses React Redux library
+              Ans: npm install --save react-redux
