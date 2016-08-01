@@ -1,0 +1,5 @@
+1. What is React-Redux library, how's it different from React and Redux
+2. What's the difference between let and var?
+3. What is a middleware?
+4. Difference in using import with {} and without {}?
+5.  
